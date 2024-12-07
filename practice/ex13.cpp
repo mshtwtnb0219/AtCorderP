@@ -24,6 +24,8 @@ int main() {
 
     //　平均点の乖離を確認
     for(int i = 0; i < K.size(); i++) {
-        cout << avg - K.at(i) << endl;
+        
+        // abs
+        cout << abs(avg - K.at(i))   << endl;
     }
 }
