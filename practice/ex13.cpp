@@ -4,7 +4,7 @@ using namespace std;
 int main() {
 
     int a = 7;
-    int N;
+    int N; 
     cin >> N;
 
     int sum = 0;
