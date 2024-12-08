@@ -1,3 +1,19 @@
-abs 関数
+abs()
     説明：絶対値を算出する
     例：abs(avg - K.at(i)) →引数が-5の場合5で出力される
+
+min(a,b)
+    説明：小さい方を返却する
+
+max(a,b)
+    説明：大きい方を返却する
+
+swap(a,b)
+    説明：a,bの値を交換する
+
+sort(vec.begin(), vec.end())
+    説明：配列変数vecをソートする（要素を小さい順に並び替える）
+
+reverse(vec.begin(), vec.end()
+    説明：配列変数vecの要素の並びを逆にする
+
