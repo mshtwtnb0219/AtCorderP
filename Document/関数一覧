@@ -17,3 +17,11 @@ sort(vec.begin(), vec.end())
 reverse(vec.begin(), vec.end()
     説明：配列変数vecの要素の並びを逆にする
 
+
+多次元配列
+vector<vector<要素の型>> 変数名(要素数1, vector<要素の型>(要素数2, 初期値))
+vector<vector<int>> data = {
+  {7, 4, 0, 8},
+  {2, 0, 3, 5},
+  {6, 1, 7, 0},
+};
