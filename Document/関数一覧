@@ -18,10 +18,38 @@ reverse(vec.begin(), vec.end()
     説明：配列変数vecの要素の並びを逆にする
 
 
-多次元配列
-vector<vector<要素の型>> 変数名(要素数1, vector<要素の型>(要素数2, 初期値))
+★多次元配列
+vector<vector<要素の型>> 変数名(要素数1, vector<要素の型>(要素数2, 初期値));
+vector<vector<要素の型>> 変数名(要素数1, vector<要素の型>(要素数2));  // 初期値を省略
+
 vector<vector<int>> data = {
   {7, 4, 0, 8},
   {2, 0, 3, 5},
   {6, 1, 7, 0},
 };
+
+大きさの取得
+vector<vector<int>> data(3, vector<int>(4));
+data.size();  // 3 (縦の要素数) (12ではないことに注意!)
+data.at(0).size();  // 4 (横の要素数)
+
+
+★ジャグ配列
+vector<vector<int>> data(3);  // 3×0の配列
+data.at(0).push_back(1);
+data.at(0).push_back(2);
+data.at(0).push_back(3);
+// data.at(0)は3要素の配列
+data.at(1).push_back(4);
+data.at(1).push_back(5);
+data.at(1).push_back(6);
+data.at(1).push_back(7);
+// data.at(1)は4要素の配列
+data.at(2).push_back(8);
+data.at(2).push_back(9);
+// data.at(2)は2要素の配列
+
+
+3次元配列
+vector<vector<vector<要素の型>>> 変数名(要素数1, vector<vector<要素の型>>(要素数2, vector<要素の型>(要素数3, 初期値)));
+vector<vector<vector<要素の型>>> 変数名(要素数1, vector<vector<要素の型>>(要素数2, vector<要素の型>(要素数3)));  // 初期値を省略
